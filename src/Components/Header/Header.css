@@ -1,0 +1,22 @@
+.top_header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: -webkit-fill-available;
+    padding: 0px 24px;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+}
+.header_content{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.header_left_options{
+    display: flex;
+    align-items: center;
+}
