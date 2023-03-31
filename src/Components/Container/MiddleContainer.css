@@ -1,0 +1,50 @@
+.MiddleContainer{
+    border: 1px solid rgb(220, 220, 220) ;
+    border-radius: 5px;
+    width: 600px;
+    padding: 10px;
+    background-color: white;
+}
+.MiddleContainer :first-child{
+    display: flex;
+    align-items: center;
+}
+.MiddleContainer :first-child img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.MiddleContainer :first-child input{
+    width: calc(100% - 80px);
+    height: 46px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    
+}
+.MiddleContainer :first-child input::placeholder{
+    color: gray;
+    padding-left: 10px;
+    font-size: large;
+    font-weight: 400;
+}
+
+.MiddleContainerIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+.skyBlueColor{
+    color: rgb(52, 197, 254);
+}
+.forestgrenColor{
+    color: rgb(9, 104, 17);
+}
+.brownColor{
+    color: rgb(92, 75, 54);
+}
+.redColor{
+    color: rgb(253, 116, 78);
+}

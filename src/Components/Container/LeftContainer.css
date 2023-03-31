@@ -1,0 +1,66 @@
+.LeftContainer{
+   border: 1px solid rgb(220, 220, 220) ;
+    border-radius: 5px;
+    width: 220px;
+    background-color: white;
+}
+.LeftContainer_topBackground{
+ 
+    height: 56px;
+    width: 100%;
+    background-color: gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   
+}
+.LeftContainer_Avatar{
+    border: 1.6px solid rgb(232, 232, 232);
+    border-radius: 50px;
+    height: 56px;
+    width: 56px;
+    margin-top: -28.8px;
+}
+.LeftContainer_imgAndAvatar{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LeftContainer_Avatar_UserInfo{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.LeftContainer_Avatar_UserInfo h5{
+    font-weight: 500;
+    font-size: medium;
+}
+.LeftContainer_Avatar_UserInfo h6{
+    margin-top: 10px;
+    font-weight: 400;
+    color: gray;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+.LeftContainer_Connection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 0px 10px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid rgb(220, 220, 220); */
+}
+.GrayColor{
+    color: gray;
+}
+.LeftContainer_ui_icon{
+    color: gray;
+    width: 15px !important;
+    height: 15px !important;
+}
+.LeftContainer_ui_icon:hover, .LeftContainer_ui_icon:focus{
+    color: black;
+}

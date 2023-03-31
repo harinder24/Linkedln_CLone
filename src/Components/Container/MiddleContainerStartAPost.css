@@ -1,0 +1,11 @@
+.MiddleContainerStartAPost{
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 5px;
+    gap: 5px;
+    border-radius: 5px;
+}
+.MiddleContainerStartAPost:hover{
+    background-color: #f3f2ef;
+    
+}

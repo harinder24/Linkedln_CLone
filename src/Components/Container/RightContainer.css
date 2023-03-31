@@ -1,0 +1,34 @@
+.RightContainer {
+    width: 300px;
+    border: 1px solid rgb(220, 220, 220) ;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+.RightContainer :first-child{
+    font-size: medium;
+    padding-bottom: 10px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.RightContainer :first-child img{
+    width: 10px;
+}
+.RightContainerContent{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    font-weight: 500;
+}
+.RightContainerContent :first-child{
+   padding-bottom: 0px;
+   margin-right: 5px;
+}
+.RightContainerContentBottom{
+    color: gray;
+    font-size: small;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}

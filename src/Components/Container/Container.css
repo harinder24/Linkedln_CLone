@@ -1,0 +1,13 @@
+.Container{
+    align-items: flex-start;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 24px;
+}
+.centerFlex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
