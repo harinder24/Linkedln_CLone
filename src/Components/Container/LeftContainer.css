@@ -5,10 +5,10 @@
     background-color: white;
 }
 .LeftContainer_topBackground{
- 
+
     height: 56px;
     width: 100%;
-    background-color: gray;
+    object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
    
@@ -16,8 +16,8 @@
 .LeftContainer_Avatar{
     border: 1.6px solid rgb(232, 232, 232);
     border-radius: 50px;
-    height: 56px;
-    width: 56px;
+    height: 56px !important;
+    width: 56px !important;
     margin-top: -28.8px;
 }
 .LeftContainer_imgAndAvatar{
@@ -63,4 +63,25 @@
 }
 .LeftContainer_ui_icon:hover, .LeftContainer_ui_icon:focus{
     color: black;
+}
+.LeftConatiner_bottom{
+    border: 1px solid rgb(220, 220, 220) ;
+    border-radius: 5px;
+    width: 220px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.LeftConatiner_bottom h4{
+padding-top: 10px;
+padding-left: 10px;
+font-size: medium;
+font-weight: 600;
+padding-bottom: 10px;
+}
+
+.RecentSearch{
+    color: gray;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }

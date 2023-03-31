@@ -20,5 +20,6 @@
 
 .HeaderOption_Avatar{
     border-radius: 50%;
-    width: 25px;
+    width: 25px !important;
+    height: 25px !important;
 }
