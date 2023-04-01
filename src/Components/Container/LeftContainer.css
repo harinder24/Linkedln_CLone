@@ -63,6 +63,7 @@
 }
 .LeftContainer_ui_icon:hover, .LeftContainer_ui_icon:focus{
     color: black;
+    cursor: pointer;
 }
 .LeftConatiner_bottom{
     border: 1px solid rgb(220, 220, 220) ;

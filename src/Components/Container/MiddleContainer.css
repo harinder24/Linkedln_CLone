@@ -16,21 +16,24 @@
    
 }
 
-.MiddleContainer :first-child input{
+.MiddleContainer :first-child button{
     width: calc(100% - 80px);
     margin-left: 15px;
     height: 46px;
     border-radius: 25px;
-    border: 1px solid gray;
-    
-}
-.MiddleContainer :first-child input::placeholder{
+    background-color: transparent;
     color: gray;
-    padding-left: 10px;
+    border: 1px solid gray;
     font-size: large;
     font-weight: 400;
+    text-align: left;
+    padding-left: 10px;
 }
 
+.MiddleContainer :first-child button:hover{
+    cursor: pointer;
+    background-color: #f3f2ef;
+}
 .MiddleContainerIcon{
     display: flex;
     justify-content: space-between;
@@ -48,4 +51,34 @@
 }
 .redColor{
     color: rgb(253, 116, 78);
+}
+.grayColor{
+    color: gray;
+}
+.UserFeed{
+    margin-top: 15px;
+    border: 1px solid rgb(220, 220, 220) ;
+    border-radius: 5px;
+    width: 600px;
+    padding: 10px;
+    background-color: white;
+}
+.UserFeed :first-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.UserFeed :first-child :last-child h6{
+    color: gray;
+    font-weight: 500;
+}
+.UserFeed :nth-child(2) p{
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.UserFeed :nth-child(3) {
+    padding: 10px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

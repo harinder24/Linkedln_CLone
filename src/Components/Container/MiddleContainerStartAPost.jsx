@@ -6,7 +6,7 @@ export default function MiddleContainerStartAPost({Icon, title , colorIcon}) {
         <div>
         {Icon && <Icon className={colorIcon} />}
         </div>
-        <div>
+        <div className='MiddleContainerStartAPostTitle'>
             {title}
         </div>
     </div>
