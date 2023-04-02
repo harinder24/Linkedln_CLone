@@ -1,7 +1,12 @@
+.MainMiddleContainer{
+    width: 600px;
+   padding-right: 20px;
+}
 .MiddleContainer{
+
     border: 1px solid rgb(220, 220, 220) ;
     border-radius: 5px;
-    width: 600px;
+    width: inherit;
     padding: 10px;
     background-color: white;
 }
@@ -9,7 +14,7 @@
     display: flex;
     align-items: center;
 }
-.MiddleContainer :first-child :first-child{
+.MiddleContainer_Aatar{
     width: 48px !important;
     height: 48px !important;
     border-radius: 50%;
@@ -59,7 +64,7 @@
     margin-top: 15px;
     border: 1px solid rgb(220, 220, 220) ;
     border-radius: 5px;
-    width: 600px;
+    width: inherit;
     padding: 10px;
     background-color: white;
 }
@@ -81,4 +86,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media only screen and (max-width: 1242px){
+    .MainMiddleContainer{
+        width: 400px;
+    }
+    }
+
+    @media only screen and (max-width: 994px){
+        .MainMiddleContainer{
+            width: 600px;
+        
+        }
+
+}
+@media only screen and (max-width: 640px){
+    .MainMiddleContainer{
+        padding-right: 0px;
+        width: 100%;
+    
+    }
+    .MiddleContainer{
+        width: calc(100% - 21.6px);
+    }
+    .UserFeed{
+        width: calc(100% - 21.6px);
+    }
 }

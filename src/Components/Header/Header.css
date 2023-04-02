@@ -10,6 +10,7 @@
     padding: 0px 24px;
     background-color: #fff;
     border-bottom: 1px solid #e4e4e4;
+    z-index: 100;
 }
 .header_content{
     width: 1200px;
@@ -17,7 +18,14 @@
     justify-content: space-between;
   
 }
-.header_left_options{
+#header_left_options{
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #header_left_options{        
+        width: 75%;
+        justify-content: space-between;
+    }
 }

@@ -10,17 +10,23 @@ import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import { useEffect } from "react";
 export default function MiddleContainer() {
+  useEffect(() => {
+    document.getElementById("postBtn").addEventListener("click", function(){
+      console.log("yes");
+    })
+  }, []);
   return (
-    <div>
+    <div className="MainMiddleContainer">
       <div className="MiddleContainer">
         <div>
-          <Avatar
+          <Avatar className="MiddleContainer_Aatar"
             src="https://media.licdn.com/dms/image/D5603AQHnp7fhICaZ9Q/profile-displayphoto-shrink_100_100/0/1674352141393?e=1685577600&v=beta&t=0WAaQ7sL3slXJqW8mCdezxuqTkVnynoA-8eDR_2e1QA"
             alt=""
           />
-          {/* <input type="text" placeholder="Start a post" /> */}
-          <button>Start a post</button>
+         
+          <button id="postBtn">Start a post</button>
         </div>
         <div className="MiddleContainerIcon">
           <MiddleContainerStartAPost

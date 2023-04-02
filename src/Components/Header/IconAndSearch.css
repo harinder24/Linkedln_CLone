@@ -16,9 +16,34 @@
     border-radius: 5px;
     background-color: #eef3f8;
 }
-.Search_Icon_Wrap input{
+.SecarchInput{
     height: 2em;
     outline: none;
     border: none;
     background-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+    .SecarchInput{
+        display: none;
+       
+    }
+    .SearchContainer{
+        background-color: transparent;
+        width: 20px;
+    }
+}
+.SearchIcon_icon_icon_toggle{
+    color: gray;
+}
+
+.SearchContainerToggle{
+    background-color: #eef3f8;
+    width: calc(100vw - 100px);
+}
+.SecarchInputToggle{
+    display: block;
+    width: calc(100vw - 100px);
+}
+.displayNoneToggle{
+    display: none;
 }

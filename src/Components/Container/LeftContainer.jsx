@@ -4,7 +4,7 @@ import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import { Avatar } from "@material-ui/core";
 export default function LeftContainer() {
   return (
-    <div>
+    <div className="LeftContainerWrap">
     <div className="LeftContainer">
       <div className="LeftContainer_imgAndAvatar">
         <img
@@ -32,11 +32,13 @@ export default function LeftContainer() {
     </div>
     <div className="LeftConatiner_bottom">
       <h4>Recent</h4>
+      <div>
       <RecentSearch title="ReactJs" />
       <RecentSearch title="AngularJs" />
       <RecentSearch title="NodeJs" />
       <RecentSearch title="VanillaJs" />
       <RecentSearch title="VueJs" />
+      </div>
     </div>
     </div>
   );

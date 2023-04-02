@@ -32,3 +32,24 @@
     padding-left: 10px;
     padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 1242px){
+    .RightContainer{
+        width: 250px;
+    }
+    }
+
+@media only screen and (max-width: 994px){
+        .RightContainer{
+            width: 600px;
+
+        }
+}
+
+@media only screen and (max-width: 640px){
+    .RightContainer{
+
+        width: calc(100% - 21.6px);
+    
+    }
+}

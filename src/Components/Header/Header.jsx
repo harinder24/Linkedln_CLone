@@ -13,7 +13,7 @@ function Header() {
         
         <nav className='header_content'>
         <IconAndSearch />
-        <div className='header_left_options'>
+        <div id='header_left_options'>
             <HeaderOption Icon={HomeIcon} title="Home"/>
             <HeaderOption Icon={PeopleIcon} title="My Network" />
             <HeaderOption Icon={WorkIcon} title="Jobs" />

@@ -23,3 +23,12 @@
     width: 25px !important;
     height: 25px !important;
 }
+@media only screen and (max-width: 768px){
+    .HeaderOption h3{
+        display: none;
+    }
+    .HeaderOption{
+        min-width: 20px;
+       
+    }
+}

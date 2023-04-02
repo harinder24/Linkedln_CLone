@@ -43,6 +43,7 @@
     font-weight: 400;
     color: gray;
     padding-bottom: 10px;
+    width: inherit;
     border-bottom: 1px solid rgb(220, 220, 220);
 }
 .LeftContainer_Connection{
@@ -68,14 +69,14 @@
 .LeftConatiner_bottom{
     border: 1px solid rgb(220, 220, 220) ;
     border-radius: 5px;
-    width: 220px;
+    width: 200px;
     background-color: white;
     margin-top: 15px;
+    padding: 10px;
 }
 
 .LeftConatiner_bottom h4{
-padding-top: 10px;
-padding-left: 10px;
+
 font-size: medium;
 font-weight: 600;
 padding-bottom: 10px;
@@ -85,4 +86,40 @@ padding-bottom: 10px;
     color: gray;
     padding-left: 20px;
     padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 994px){
+    .LeftContainer{
+        width: 620px;
+    }
+    .LeftContainerWrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .LeftConatiner_bottom {
+        width: 600px;    
+      
+        
+    }
+    .LeftConatiner_bottom :nth-child(2){
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 640px){
+    .LeftContainerWrap{
+        width: 100%;
+    }
+    .LeftConatiner_bottom{
+
+        width: calc(100% - 21.6px);
+    
+    }
+    .LeftContainer{
+ 
+        width: calc(100% - 1.6px);
+    }
 }
