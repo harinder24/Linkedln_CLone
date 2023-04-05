@@ -16,6 +16,12 @@
     border-radius: 5px;
     background-color: #eef3f8;
 }
+#SearchContainerID:focus-within{
+
+border: 1px solid black;
+}
+
+  
 .SecarchInput{
     height: 2em;
     outline: none;
@@ -38,12 +44,32 @@
 
 .SearchContainerToggle{
     background-color: #eef3f8;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 120px);
 }
 .SecarchInputToggle{
     display: block;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 120px);
 }
 .displayNoneToggle{
     display: none;
+}
+.displayFlexToggle{
+    display: flex;
+}
+.hide {
+    display: none !important;
+  }
+
+@media only screen and (min-width: 768px){
+    
+
+    .SearchContainerToggle{
+        width: initial;
+    }
+    .SecarchInputToggle{
+        width: initial;
+    }
+    .hide {
+        display: flex !important;
+      }
 }

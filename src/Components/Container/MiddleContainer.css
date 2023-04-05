@@ -2,6 +2,9 @@
     width: 600px;
    padding-right: 20px;
 }
+
+
+
 .MiddleContainer{
 
     border: 1px solid rgb(220, 220, 220) ;
@@ -86,6 +89,106 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.FeedModal{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    z-index: 101;
+    background-color: rgba(0,0,0,0.5);
+  display: none;
+    justify-content: center; 
+}
+.ShowDisplayFlex{
+    display: flex !important;
+}
+.htmlOverflow{
+    overflow: hidden;
+
+
+    overflow-x: hidden;
+
+    overflow-y: hidden;
+}
+.AddFeed{
+    margin-top: 50px;
+    width: 500px;
+height: fit-content;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.AddFeed_header{
+    padding: 15px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.AddFeed_header h4{
+font-size: larger;
+font-weight: 400;
+}
+.AddFeed_header :last-child{
+    border-radius: 50%;
+    height: 28px ;
+    width: 28px ;
+
+  
+}
+.AddFeed_header :last-child:hover{
+ 
+    background-color: rgb(220, 220, 220);
+}
+.AddFeed_header :last-child :first-child{
+    
+    height: 28px !important;
+    width: 28px !important;
+    color: gray;
+}
+.AddFeed_user{
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+}
+.AddFeed_user :last-child{
+    font-weight: 500;
+}
+.AddFeed_input{
+    padding: 15px;
+    width: calc(100% - 30px);
+}
+.AddFeed_input textarea{
+    width: calc(100% - 30px);
+    height: 100px;
+    outline: none;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none; /* for Safari */
+    -moz-appearance: none; 
+    resize: none;
+}
+.AddFeed_btn{
+    padding: 15px;
+    width: calc(100%-30px);
+    display: flex;
+    justify-content: end;
+}
+.AddFeed_btn button{
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: medium;
+    font-weight: 600;
+    border: 0px;
+    background-color: rgb(220, 220, 220);
+    color: gray;
+}
+.AddFeed_btn button:hover{
+    cursor: pointer;
 }
 @media only screen and (max-width: 1242px){
     .MainMiddleContainer{
