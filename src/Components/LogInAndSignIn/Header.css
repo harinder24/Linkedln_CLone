@@ -1,0 +1,45 @@
+.loginAndSigHeader{
+    width: 1200px;
+    height: 80px;
+    padding: 12px 16px 16px 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loginAndSigHeader :first-child{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.loginAndSigHeader :first-child :first-child{
+    color: #0a66c2;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.loginAndSigHeader :first-child :last-child{
+    height: 35px;
+    width: 35px;
+}
+.loginAndSigHeader__lastDiv{
+    height: 46px;
+    width: 98px;
+    color: #0a66c2;
+    box-shadow: 0 0 0 1px #0a66c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    font-weight: 500;
+}
+.loginAndSigHeader__lastDiv:hover ,.loginAndSigHeader__lastDiv:focus{
+background-color: #f0f8ff;
+cursor: pointer;
+}
+@media only screen and (max-width: 1200px){
+    .loginAndSigHeader{
+        width: 100%;
+    }
+}

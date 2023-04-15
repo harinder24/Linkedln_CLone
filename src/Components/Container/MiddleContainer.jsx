@@ -30,16 +30,19 @@ export default function MiddleContainer() {
   }, []);
 
   const sendPosts = () => {
-    db.collection("posts").add({
-      name: "Harinderpal Sran",
-      description: "this is a test",
-      message: input,
-      photoURL: "",
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    });
-    setInput("")
-    document.getElementById("FeedModalID").classList.remove("ShowDisplayFlex");
-    document.querySelector("html").classList.remove("htmlOverflow");
+    if(!isInputEmpty){
+      db.collection("posts").add({
+        name: "Harinderpal Sran",
+        description: "this is a test",
+        message: input,
+        photoURL: "",
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+      setInput("")
+      document.getElementById("FeedModalID").classList.remove("ShowDisplayFlex");
+      document.querySelector("html").classList.remove("htmlOverflow");
+    }
+    
   };
 
   function showCreateAPost() {
@@ -50,6 +53,7 @@ export default function MiddleContainer() {
     document.getElementById("FeedModalID").classList.remove("ShowDisplayFlex");
     document.querySelector("html").classList.remove("htmlOverflow");
   }
+  const isInputEmpty = input.trim() === "";
   return (
     <div className="MainMiddleContainer">
       <div className="MiddleContainer">
@@ -134,7 +138,7 @@ export default function MiddleContainer() {
             ></textarea>
           </div>
           <div className="AddFeed_btn">
-            <button onClick={sendPosts}>Post</button>
+            <button style={{ backgroundColor: isInputEmpty ? "rgb(220, 220, 220)" : "blue" ,color: isInputEmpty ? "gray" : "white"}}  onClick={sendPosts}>Post</button>
           </div>
         </div>
       </div>
