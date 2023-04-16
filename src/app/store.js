@@ -1,14 +1,8 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import { configureStore } from "@reduxjs/toolkit";
+import useReducer from "../feature/userSlice.js"
 
-export const store = (props) => {
-  return (
-    <div>store</div>
-  )
-}
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(store)
+export const store =  configureStore({
+  reducer:{
+    user: useReducer
+  }
+})

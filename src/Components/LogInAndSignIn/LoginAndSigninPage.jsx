@@ -4,9 +4,9 @@ import "./LoginAndSigninPage.css"
 function LoginPage() {
   return (
     <div className='LoginAndSigninPageDiv'>
-        <Header></Header>
+        <Header navigateTo="/signup" btnType="Sign Up"/>
         <div className='LoginAndSigninDivBottomContent'>
-            <LeftContent/>
+            <LeftContent btnType={"Log In"}/>
             <RightContent/>
         </div>
     </div>
@@ -15,9 +15,9 @@ function LoginPage() {
 function SignUpPage() {
     return (
       <div className='LoginAndSigninPageDiv'>
-          <Header></Header>
+          <Header navigateTo="/login" btnType={"Log In"}/>
           <div className='LoginAndSigninDivBottomContent'>
-              <LeftContentForSignUp/>
+              <LeftContent btnType={"Sign Up"}/>
               <RightContent/>
           </div>
       </div>
@@ -26,7 +26,7 @@ function SignUpPage() {
 
 
 
-function LeftContent(){
+function LeftContent({btnType}){
     return(
         <div className='LoginAndSigninPageDivLeftContent'>
             <h2 className='LoginAndSigninPageDivLeftContent__h2'>Welcome to your professional community</h2>
@@ -36,26 +36,11 @@ function LeftContent(){
                 <h3>Password</h3>
                 <input className='LoginAndSigninPageDivLeftContent__input' type="password" />
             </div>
-            <button className='LoginAndSigninPageDivLeftContent__button'>Log in</button>
+            <button className='LoginAndSigninPageDivLeftContent__button'>{btnType}</button>
         </div>
     )
 }
-function LeftContentForSignUp(){
-    return(
-        <div className='LoginAndSigninPageDivLeftContent'>
-            <h2 className='LoginAndSigninPageDivLeftContent__h2'>Welcome to your professional community</h2>
-            <div>
-                <h3>Email</h3>
-                <input className='LoginAndSigninPageDivLeftContent__input' type="email" />
-                <h3>Password</h3>
-                <input className='LoginAndSigninPageDivLeftContent__input' type="password" />
-                <h3>Retype Password</h3>
-                <input className='LoginAndSigninPageDivLeftContent__input' type="password" />
-            </div>
-            <button className='LoginAndSigninPageDivLeftContent__button'>Sign up</button>
-        </div>
-    )
-}
+
 function RightContent(){
     return(
         <div className='LoginPageSigninDivRightContent'>
